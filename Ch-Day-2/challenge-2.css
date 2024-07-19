@@ -12,6 +12,7 @@
   position: relative;
   border-radius: 20px;
 }
+
 .myLine {
   position: absolute;
   top: 50%;
@@ -20,6 +21,7 @@
   height: 20%;
   width: 20%;
 }
+
 .line {
   position: absolute;
   left: 50%;
@@ -29,44 +31,129 @@
   background-color: white;
   border-radius: 10px;
 }
+
 .line1 {
   top: 30%;
-  animation: Line1 1s;
+
 }
+
 .line2 {
   top: 50%;
-  animation: Line2 1s;
+
 }
+
 .line3 {
   top: 70%;
-  animation: Line3 1s;
+
 }
+
 .myLine:hover {
   cursor: pointer;
 }
 
-@keyframes Line1 {
-  50% {
-    top: 50%;
-  }
-  100% {
-    transform: rotateZ(45deg) translate(-10px, 35px);
-  }
+.line1-animation {
+  animation: Line1 1s forwards;
+
 }
+
+.line2-animation {
+  animation: Line2 1s forwards;
+}
+
+
+.line3-animation {
+  animation: Line3 1s forwards;
+
+}
+
+
+.noAnimation {
+  animation: none 1s;
+}
+
+.line1-animation-rev {
+  animation: Line1-reverse 1s forwards;
+
+}
+
+.line2-animation-rev {
+  animation: Line2-reverse 1s forwards;
+}
+
+.line3-animation-rev {
+  animation: Line3-reverse 1s forwards;
+}
+
+@keyframes Line1 {
+
+  50% {
+    transform: translate(-50%, 270%);
+
+  }
+
+  100% {
+    transform: translate(-30px, 13px) rotate(45deg);
+  }
+
+}
+
 @keyframes Line2 {
   50% {
-    top: 50%;
+
     opacity: 0.5;
+
   }
+
   100% {
     opacity: 0;
+
   }
 }
+
 @keyframes Line3 {
   50% {
-    top: 50%;
+    transform: translate(-50%, -375%);
   }
+
   100% {
-    transform: rotateZ(-45deg) translate(-10px, -35px);
+    transform: translate(-50%, -375%) rotate(-45deg);
   }
+
+}
+
+@keyframes Line1-reverse {
+
+  0% {
+    transform: translate(-30px, 13px) rotate(45deg);
+  }
+
+  80% {
+    transform: translate(-50%, 270%);
+
+  }
+
+
+}
+
+@keyframes Line2-reverse {
+  0% {
+
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes Line3-reverse {
+  0% {
+    transform: translate(-50%, -375%) rotate(-45deg);
+
+  }
+
+  80% {
+    transform: translate(-50%, -375%);
+  }
+
 }
