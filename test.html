@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --fontColor: hsl(0, 0%, 85%);
+      --fontColor-Lighter: hsl(0, 0%, 100%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      height: 500px;
+      width: 500px;
+      background-image: linear-gradient(to top right, #43389F 0%, #4ec6ca 100%);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .one {
+      position: absolute;
+      top: 30%;
+      left: 35%;
+      transform: translate(-50%, -50%) rotateZ(50deg);
+      height: 40px;
+      width: 25px;
+      background-color: var(--fontColor);
+      border-radius: 5px;
+      box-shadow: 2px 0 10px 0px black;
+    }
+
+    .one-one {
+      position: absolute;
+      top: 36%;
+      left: 38%;
+      transform: translate(-50%, -50%);
+      height: 100px;
+      width: 25px;
+      background-color: var(--fontColor-Lighter);
+      border-radius: 5px;
+      z-index: 8;
+      box-shadow: 2px 0 10px 0px black;
+    }
+
+    .zero {
+      position: absolute;
+      top: 36%;
+      left: 48%;
+      transform: translate(-50%, -50%);
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      border: 25px solid var(--fontColor-Lighter);
+      box-shadow: 2px 0 13px 0px black;
+      z-index: 7;
+    }
+
+    .zero-2 {
+      left: 64%;
+      z-index: 6;
+    }
+
+    .big {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--fontColor-Lighter);
+      font-size: 4.5rem;
+      text-transform: uppercase;
+    }
+
+    .small {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--fontColor-Lighter);
+      font-size: 2rem;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="one"></div>
+    <div class="one-one"></div>
+    <div class="zero"></div>
+    <div class="zero zero-2"></div>
+    <div class="big">Days</div>
+    <div class="small">Css Challenge</div>
+  </div>
+
+
+</body>
+
+</html>
