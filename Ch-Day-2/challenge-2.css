@@ -34,17 +34,14 @@
 
 .line1 {
   top: 30%;
-
 }
 
 .line2 {
   top: 50%;
-
 }
 
 .line3 {
   top: 70%;
-
 }
 
 .myLine:hover {
@@ -53,19 +50,15 @@
 
 .line1-animation {
   animation: Line1 1s forwards;
-
 }
 
 .line2-animation {
   animation: Line2 1s forwards;
 }
 
-
 .line3-animation {
   animation: Line3 1s forwards;
-
 }
-
 
 .noAnimation {
   animation: none 1s;
@@ -73,7 +66,6 @@
 
 .line1-animation-rev {
   animation: Line1-reverse 1s forwards;
-
 }
 
 .line2-animation-rev {
@@ -85,28 +77,22 @@
 }
 
 @keyframes Line1 {
-
   50% {
     transform: translate(-50%, 270%);
-
   }
 
   100% {
     transform: translate(-30px, 13px) rotate(45deg);
   }
-
 }
 
 @keyframes Line2 {
   50% {
-
     opacity: 0.5;
-
   }
 
   100% {
     opacity: 0;
-
   }
 }
 
@@ -118,7 +104,6 @@
   100% {
     transform: translate(-50%, -375%) rotate(-45deg);
   }
-
 }
 
 @keyframes Line1-reverse {
