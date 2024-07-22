@@ -1,0 +1,75 @@
+.container {
+  height: 500px;
+  width: 500px;
+  background-color: #e56262;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+.dot1 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 4px 4px 10px 1px rgb(0, 0, 0, 0.3);
+  position: absolute;
+  transform: scale(0);
+  animation: dot1 5s infinite;
+}
+@keyframes dot1 {
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.dot2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 4px 4px 10px 1px rgb(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+  transform: scale(0);
+  position: absolute;
+  animation: dot2 5s infinite;
+}
+@keyframes dot2 {
+  20% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  80% {
+    transform: scale(0);
+  }
+}
+.dot3 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 4px 4px 10px 1px rgb(0, 0, 0, 0.3);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transform: scale(0);
+  animation: dot3 5s infinite;
+}
+@keyframes dot3 {
+  30% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.3);
+  }
+  65% {
+    transform: scale(0);
+  }
+}
