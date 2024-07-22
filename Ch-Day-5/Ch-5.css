@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container {
+  height: 500px;
+  width: 600px;
+  background-color: #42a7a1;
+}
+.card {
+  height: 300px;
+  width: 400px;
+  background-color: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.199);
+}
+.header {
+  position: absolute;
+  height: 90px;
+  width: 400px;
+  background-color: rgb(253, 232, 144);
+}
+.head-word {
+  color: black;
+  position: absolute;
+}
+.week {
+  left: 5%;
+  top: 40%;
+}
+.revenue {
+  left: 80%;
+  top: 40%;
+}
+.time {
+  left: 5%;
+  top: 60%;
+}
+.amount {
+  left: 80%;
+  top: 60%;
+}
+
+/* TOP  end*/
+.parameter {
+  position: absolute;
+  height: 50px;
+  width: 400px;
+  top: 90px;
+  background-color: white;
+  text-align: right;
+  color: black;
+}
+.view {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.view::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  top: 50%;
+  left: -50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+.purchase {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+.purchase::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  top: 50%;
+  left: -25%;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+}
+/* Mid end */
+.statistic {
+  position: absolute;
+  height: 160px;
+  width: 400px;
+  top: 140px;
+  background-color: rgb(156, 222, 159);
+}
+.bgline {
+  position: absolute;
+  height: 1px;
+  width: 80%;
+  background-color: rgb(128, 128, 128, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bgline1 {
+  top: 25%;
+}
+.bgline3 {
+  top: 75%;
+}
+.chart-line {
+  position: absolute;
+  width: 100%;
+  left: 60%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+.blue {
+  top: 50%;
+}
+.chart-week {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  left: 65%;
+  font-size: 0.8rem;
+  display: flex;
+  column-gap: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.points-red {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background-color: red;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.point-red1 {
+  top: 100px;
+  left: 30px;
+}
+.point-red2 {
+  top: 72px;
+  left: 80px;
+}
+.point-red3 {
+  top: 84px;
+  left: 130px;
+}
+.point-red4 {
+  top: 50px;
+  left: 180px;
+}
+.point-red5 {
+  top: 100px;
+  left: 220px;
+}
+.point-red6 {
+  top: 68px;
+  left: 260px;
+}
+.point-red7 {
+  top: 90px;
+  left: 310px;
+}
+/* RED */
+
+.points-blue {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background-color: blue;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.point-blue1 {
+  top: 80px;
+  left: 30px;
+}
+.point-blue2 {
+  top: 100px;
+  left: 80px;
+}
+.point-blue3 {
+  top: 90px;
+  left: 130px;
+}
+.point-blue4 {
+  top: 30px;
+  left: 180px;
+}
+.point-blue5 {
+  top: 50px;
+  left: 220px;
+}
+.point-blue6 {
+  top: 88px;
+  left: 260px;
+}
+.point-blue7 {
+  top: 30px;
+  left: 310px;
+}
