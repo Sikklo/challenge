@@ -79,7 +79,7 @@
   left: 80%;
   transform: translate(-50%, -50%);
 }
-.purchase::after {
+.purchase::before {
   content: "";
   position: absolute;
   height: 3px;
@@ -90,6 +90,7 @@
   background-color: blue;
 }
 /* Mid end */
+
 .statistic {
   position: absolute;
   height: 160px;
@@ -114,14 +115,16 @@
 }
 .chart-line {
   position: absolute;
-  width: 100%;
-  left: 60%;
-  top: 30%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
-.blue {
-  top: 50%;
+.points {
+  position: absolute;
 }
+/* RED */
+
+/* Blue */
 .chart-week {
   position: absolute;
   width: 100%;
@@ -131,84 +134,4 @@
   display: flex;
   column-gap: 20px;
   transform: translate(-50%, -50%);
-}
-
-.points-red {
-  position: absolute;
-  height: 5px;
-  width: 5px;
-  background-color: red;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.point-red1 {
-  top: 100px;
-  left: 30px;
-}
-.point-red2 {
-  top: 72px;
-  left: 80px;
-}
-.point-red3 {
-  top: 84px;
-  left: 130px;
-}
-.point-red4 {
-  top: 50px;
-  left: 180px;
-}
-.point-red5 {
-  top: 100px;
-  left: 220px;
-}
-.point-red6 {
-  top: 68px;
-  left: 260px;
-}
-.point-red7 {
-  top: 90px;
-  left: 310px;
-}
-/* RED */
-
-.points-blue {
-  position: absolute;
-  height: 5px;
-  width: 5px;
-  background-color: blue;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.point-blue1 {
-  top: 80px;
-  left: 30px;
-}
-.point-blue2 {
-  top: 100px;
-  left: 80px;
-}
-.point-blue3 {
-  top: 90px;
-  left: 130px;
-}
-.point-blue4 {
-  top: 30px;
-  left: 180px;
-}
-.point-blue5 {
-  top: 50px;
-  left: 220px;
-}
-.point-blue6 {
-  top: 88px;
-  left: 260px;
-}
-.point-blue7 {
-  top: 30px;
-  left: 310px;
 }
