@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+:root {
+  --li-color: hsl(0, 0%, 50%);
+  --li-color-hover: hsl(0, 0%, 80%);
+  --menu-li-hover: hsl(0, 0%, 30%);
+  --menu-background-color: hsl(0, 0%, 20%);
+  --notifications-color: hsl(0, 0%, 50%);
+  --notifications-hover-color: hsl(214, 55%, 57%);
+}
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-color: hsl(214, 55%, 37%);
+}
+.panel {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.325);
+  overflow: hidden;
+  transition: 0.5s all ease-in-out;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(214, 55%, 57%);
+  position: relative;
+  align-content: center;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+.menu-icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 15px;
+  top: 50%;
+  opacity: 0.5;
+  transition: 0.3s all ease-in-out;
+}
+.menu-icon:hover {
+  opacity: 1;
+}
+.dash-top {
+  position: absolute;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  height: 0.1rem;
+  width: 0.7rem;
+  left: 6px;
+  top: 40%;
+  border-radius: 50px;
+}
+.dash-top::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 0.2rem;
+  width: 0.2rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  right: -50%;
+  top: 50%;
+}
+.dash-bottom {
+  position: absolute;
+  background-color: white;
+  height: 0.1rem;
+  width: 1rem;
+  left: 2%;
+  top: 65%;
+  border-radius: 50px;
+}
+.title {
+  color: white;
+  font-size: 0.6rem;
+}
+.search {
+  font-size: 0.6rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  right: 0;
+  top: 50%;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.585);
+  transition: 0.3s all ease-in-out;
+}
+.search:hover {
+  color: white;
+}
+.search-hide {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 150px;
+  padding: 0 10px;
+  opacity: 0;
+  transition: 0.3s all;
+  pointer-events: none;
+}
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+/* header END */
+.main {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.line {
+  position: absolute;
+  height: 100%;
+  width: 1%;
+  background-color: hsl(0, 0%, 80%);
+  left: 10%;
+}
+.notification {
+  margin-left: 30px;
+  font-size: 10px;
+  margin-bottom: 25px;
+  color: var(--notifications-color);
+}
+.notification:hover {
+  color: var(--notifications-hover-color);
+  cursor: pointer;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  border: 1px solid hsl(240, 100%, 80%);
+  background-color: white;
+  transform: translate(-50%, 50%);
+  left: 21px;
+  outline-color: white;
+  outline-style: solid;
+  outline-width: 1px;
+}
+.time {
+  font-size: 8px;
+}
+
+/* Main End */
+.menu {
+  position: absolute;
+  height: 45%;
+  transform: translate(-50%, -50%);
+  left: 30%;
+  top: 50%;
+  border-radius: 5px;
+  transition: 0.2s all ease-in-out;
+  background-color: var(--menu-background-color);
+  opacity: 0;
+  z-index: -1;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10px;
+  padding: 2px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.menu li {
+  line-height: 20px;
+  color: var(--li-color);
+  transition: 0.2s all ease-in-out;
+}
+.menu li:hover {
+  cursor: pointer;
+  color: var(--li-color-hover);
+  background-color: var(--menu-li-hover);
+}
+
+.panel-move {
+  transform: translateX(20%);
+}
+.menu-move {
+  z-index: 1;
+  opacity: 1;
+  left: 25%;
+}
